@@ -611,10 +611,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.bg-black\/50 {
-  background-color: rgb(0 0 0 / 0.5);
-}
-
 .bg-blue-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(219 234 254 / var(--tw-bg-opacity));
@@ -630,14 +626,14 @@ video {
      object-fit: cover;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-4 {
@@ -694,17 +690,16 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:rounded-none {
-    border-radius: 0px;
+  .md\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .md\:text-left {
     text-align: left;
   }
-}
 
-@media (min-width: 1024px) {
-  .lg\:rounded-full {
-    border-radius: 9999px;
+  .md\:text-5xl\/normal {
+    font-size: 3rem;
+    line-height: 1.5;
   }
 }
